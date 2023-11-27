@@ -2,10 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: build/zephyr-module-keymap-loading-refactor
       import: app/west.yml
+    - name: vik-core-module
+      remote: petejohanson
+    - name: vik-controller-module
+      remote: petejohanson
+    - name: sadekbaroudi-keyboard-module
+      remote: petejohanson
   self:
     path: config
