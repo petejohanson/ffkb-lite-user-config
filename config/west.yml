@@ -11,9 +11,12 @@ manifest:
       import: app/west.yml
     - name: vik-core-module
       remote: petejohanson
+      revision: main
     - name: vik-controller-module
       remote: petejohanson
+      revision: main
     - name: sadekbaroudi-keyboard-module
       remote: petejohanson
+      revision: main
   self:
     path: config
